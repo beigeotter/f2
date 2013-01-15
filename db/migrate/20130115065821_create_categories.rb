@@ -1,6 +1,7 @@
-class CreateActions < ActiveRecord::Migration
+class CreateCategories < ActiveRecord::Migration
   def change
-    create_table :actions do |t|
+    create_table :categories do |t|
+      t.string :action
       t.string :book
       t.string :food
       t.string :movie

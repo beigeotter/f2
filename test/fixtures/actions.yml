@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  book: MyString
+  food: MyString
+  movie: MyString
+
+two:
+  book: MyString
+  food: MyString
+  movie: MyString

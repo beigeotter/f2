@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Activity:</b>
+  <%= @entry.activity %>
+  <%= @entry.action_list %>
+  <%= @entry.book_list %>
+  <%= @entry.food_list %>
+  <%= @entry.movie_list %>
+
+  
+</p>
+
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

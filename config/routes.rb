@@ -1,4 +1,9 @@
 Finaproject::Application.routes.draw do
+ 
+  get "categories/:cat_type" => "categories#index" # show all items in this category
+  get "categories/:cat_type/:tag" => "categories#filtered" # additionally filters items in this category by tag
+
+  
   get "entries" => "entries#new" , :as => :entries
   get "tags/:tag" => "entries#new", :as => :tag
   resources :entries

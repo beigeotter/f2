@@ -1,8 +1,9 @@
 class Entry < ActiveRecord::Base
-  attr_accessible :activity, :tag_list
+  attr_accessible :activity, :tag_list, 
+  #belongs_to :category
 
   acts_as_taggable
-  acts_as_taggable_on :action, :book, :food, :movie
+  #acts_as_taggable_on :action, :book, :food, :movie
 
   # def sorted
   # 	@entry = Entry.find(params[:id]) do |en|

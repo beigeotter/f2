@@ -1,3 +1,4 @@
 class Category < ActiveRecord::Base
-  attr_accessible :action, :book, :food, :movie
+  attr_accessible :cat_type, :name, :entry
+  #has_many :entries
 end
